@@ -46,3 +46,17 @@ Installation using [these instructions](https://ubuntuhandbook.org/index.php/202
 sudo add-apt-repository ppa:aslatter/ppa
 sudo apt install alacritty
 ```
+
+### Starship
+
+Installation from [these instructions](https://starship.rs/guide/#%F0%9F%9A%80-installation)
+
+```bash
+sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+```
+
+Then add the following to the end of your `.zshrc`
+
+```bash
+eval "$(starship init zsh)"
+```
