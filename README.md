@@ -16,6 +16,8 @@ The dotfiles are as follows
 
 ### Fonts
 
+General fonts can be downloaded from [here](https://www.nerdfonts.com/font-downloads).
+
 ```bash
 sudo apt install fonts-firacode
 ```
