@@ -33,6 +33,7 @@ echo "Installing Tex Live ..."
 sudo apt-get install -y texlive-full
 
 echo "Installing Spotify Client ..."
+sudo apt install -y curl
 curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add - 
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt-get update && sudo apt-get install spotify-client
@@ -61,7 +62,7 @@ sudo apt-get install terminator
 # git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
 
-sudo apt install -y zsh curl
+sudo apt install -y zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Install Poetry
