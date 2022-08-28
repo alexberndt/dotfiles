@@ -15,6 +15,8 @@ sudo apt install apt-transport-https
 sudo apt update
 sudo apt install code # or code-insiders
 
+echo "Installing Terminator terminal ..."
+sudo apt-get install terminator
 
 echo "Installing Inkscape ..."
 sudo add-apt-repository ppa:inkscape.dev/stable
@@ -28,9 +30,6 @@ sudo apt-get install gimp
 
 echo "Install VLC player ..."
 sudo apt install -y vlc
-
-echo "Installing Tex Live ..."
-sudo apt-get install -y texlive-full
 
 echo "Installing Spotify Client ..."
 sudo apt install -y curl
@@ -55,19 +54,15 @@ wget https://raw.githubusercontent.com/alexberndt/dotfiles/main/wallpapers/googl
 gsettings set org.gnome.desktop.background picture-uri file:////home/alex/Pictures/wallpapers/earth-1.jpg
 gsettings set org.gnome.desktop.screensaver picture-uri file:////home/alex/Pictures/wallpapers/earth-1.jpg
 
-
-sudo apt-get install terminator
-
-# Pyenv
-# git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-
-
+# Install ZSH and oh-my-zsh
 sudo apt install -y zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Install Poetry
 curl -sSL https://install.python-poetry.org | python3 -
 
+# Install peek desktop GIF recorder
+sudo apt-get install peek
 
 # wget https://raw.githubusercontent.com/alexberndt/dotfiles/main/.tmux.conf
 # wget https://raw.githubusercontent.com/alexberndt/dotfiles/main/.antigenrc
