@@ -54,15 +54,15 @@ wget https://raw.githubusercontent.com/alexberndt/dotfiles/main/wallpapers/googl
 gsettings set org.gnome.desktop.background picture-uri file:////home/alex/Pictures/wallpapers/earth-1.jpg
 gsettings set org.gnome.desktop.screensaver picture-uri file:////home/alex/Pictures/wallpapers/earth-1.jpg
 
-# Install ZSH and oh-my-zsh
-sudo apt install -y zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 # Install Poetry
 curl -sSL https://install.python-poetry.org | python3 -
 
 # Install peek desktop GIF recorder
 sudo apt-get install -y peek
+
+# Install ZSH and oh-my-zsh (keep last as it re-inits shell)
+sudo apt install -y zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # wget https://raw.githubusercontent.com/alexberndt/dotfiles/main/.tmux.conf
 # wget https://raw.githubusercontent.com/alexberndt/dotfiles/main/.antigenrc
