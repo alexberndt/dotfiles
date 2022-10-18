@@ -13,20 +13,20 @@ sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/p
 rm -f packages.microsoft.gpg
 sudo apt install apt-transport-https
 sudo apt update
-sudo apt install code # or code-insiders
+sudo apt install -y code # or code-insiders
 
 echo "Installing Terminator terminal ..."
-sudo apt-get install terminator
+sudo apt-get install -y terminator
 
 echo "Installing Inkscape ..."
 sudo add-apt-repository ppa:inkscape.dev/stable
 sudo apt update
-sudo apt install inkscape
+sudo apt install -y inkscape
 
 echo "Installing GIMP ..."
 sudo add-apt-repository ppa:otto-kesselgulasch/gimp
 sudo apt-get update
-sudo apt-get install gimp
+sudo apt-get install -y gimp
 
 echo "Install VLC player ..."
 sudo apt install -y vlc
@@ -35,7 +35,7 @@ echo "Installing Spotify Client ..."
 sudo apt install -y curl
 curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add - 
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-sudo apt-get update && sudo apt-get install spotify-client
+sudo apt-get update && sudo apt-get install -y spotify-client
 
 echo "Installing Unity Tweak Tool ..."
 sudo add-apt-repository universe
@@ -62,7 +62,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 curl -sSL https://install.python-poetry.org | python3 -
 
 # Install peek desktop GIF recorder
-sudo apt-get install peek
+sudo apt-get install -y peek
 
 # wget https://raw.githubusercontent.com/alexberndt/dotfiles/main/.tmux.conf
 # wget https://raw.githubusercontent.com/alexberndt/dotfiles/main/.antigenrc
